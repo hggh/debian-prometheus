@@ -1,0 +1,11 @@
+[Unit]
+Description=Prometheus
+
+[Service]
+User=prometheus
+Group=prometheus
+EnvironmentFile=/etc/default/prometheus
+ExecStart=/usr/bin/prometheus --web.console.templates=/usr/share/prometheus/consoles --web.console.libraries=/usr/share/prometheus/console_libraries $OPTIONS
+
+[Install]
+WantedBy=multi-user.target

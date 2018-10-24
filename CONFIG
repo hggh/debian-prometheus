@@ -1,0 +1,7 @@
+VERSION=2.4.3
+DEB_VERSION=1
+PACKAGE_NAME=prometheus
+PROGRAM_NAME=$PACKAGE_NAME
+UPSTREAM_NAME=$PACKAGE_NAME
+EXTRA_INSTALL_DIRS="build/${UPSTREAM_NAME}-${VERSION}.linux-amd64/console_libraries=usr/share/prometheus/ build/${UPSTREAM_NAME}-${VERSION}.linux-amd64/consoles=usr/share/prometheus/ build/${UPSTREAM_NAME}-${VERSION}.linux-amd64/promtool=usr/bin/"
+URL=https://github.com/prometheus/prometheus/releases/download/v${VERSION}/prometheus-${VERSION}.linux-amd64.tar.gz
